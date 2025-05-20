@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iPhone Simulador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="iphone">
+    <h1>📱 iPhone Simulador</h1>
+
+    <div class="section">
+      <h2>🎵 Reprodutor Musical</h2>
+      <input type="text" id="musica" placeholder="Nome da música" />
+      <button onclick="selecionarMusica()">Selecionar</button>
+      <button onclick="tocar()">Tocar</button>
+      <button onclick="pausar()">Pausar</button>
+    </div>
+
+    <div class="section">
+      <h2>📞 Aparelho Telefônico</h2>
+      <input type="text" id="numero" placeholder="Número de telefone" />
+      <button onclick="ligar()">Ligar</button>
+      <button onclick="atender()">Atender</button>
+      <button onclick="correioVoz()">Correio de Voz</button>
+    </div>
+
+    <div class="section">
+      <h2>🌐 Navegador na Internet</h2>
+      <input type="text" id="url" placeholder="https://site.com" />
+      <button onclick="exibirPagina()">Exibir Página</button>
+      <button onclick="novaAba()">Nova Aba</button>
+      <button onclick="atualizar()">Atualizar</button>
+    </div>
+
+    <div class="output" id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
